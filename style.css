@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    overflow: hidden;
+}
+
+nav .logo{
+    float: right;
+    border: 1px solit white;
+}
+
+nav a{
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
