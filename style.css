@@ -1,27 +1,57 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-nav{
-    background-color: white;
-    overflow: hidden;
+nav {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
-nav .logo{
-    float: left;
-    border: 1px solid black;
-    margin: 10px;
-    padding: 14px 40px;
+nav .logo {
+  float: left;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 14px 40px;
 }
 
-nav a{
-    float: right;
-    color: black;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+nav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+header {
+  background: url(header.jpg), rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  padding: 15%;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 80px;
+}
+
+header h2 {
+  text-align: center;
+  color: white;
+}
+
+header .btn_rm {
+  margin: 0 44%;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: red;
 }
