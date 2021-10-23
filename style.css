@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: 'Barlow Condensed';
 }
 
 nav {
@@ -45,6 +46,7 @@ header h1 {
 header h2 {
   text-align: center;
   color: white;
+  font-weight: 500;
 }
 
 header .btn_rm {
@@ -119,4 +121,24 @@ main button{
 main button:hover{
   background-color: #79b3eb;
   transition: 200ms;
+}
+
+.img_sc2{
+  flex: 50%;
+  padding: 40px 20px 20px 15%;
+}
+
+.img_sc2 img{
+  max-width: 100%;
+}
+
+.art_sc2{
+  flex: 50%;
+  padding-right: 15%;
+  margin: auto;
+  text-align: center;
+}
+
+.art_sc2 h2{
+  font-size: 30px;
 }
