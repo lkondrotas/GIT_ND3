@@ -13,21 +13,28 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  padding: 0 60px;
 }
 
 nav .logo {
   float: left;
   border: 1px solid black;
   margin: 10px;
-  padding: 14px 40px;
+  padding: 12px 40px;
 }
 
 nav a {
   float: right;
   color: black;
   text-align: center;
-  padding: 14px 20px;
+  padding: 14px 30px;
   text-decoration: none;
+  transition: 200ms;
+}
+
+nav a:hover{
+  background-color: rgb(185, 185, 185);
+  transition: 200ms;
 }
 
 header {
@@ -55,7 +62,7 @@ header .btn_rm {
   color: white;
   text-align: center;
   text-decoration: none;
-  background: red;
+  background: #DB545A;
 }
 
 section{
@@ -100,8 +107,11 @@ main input, textarea{
   
 }
 
-main input::placeholder, textarea::placeholder{
+main input::placeholder, main textarea::placeholder{
   color: rgb(180, 180, 180);
+  font-weight: 100;
+  font-variant: small-caps;
+  padding: 10px;
 }
 
 main textarea{
