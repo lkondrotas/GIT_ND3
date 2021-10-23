@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Barlow Condensed';
+}
+
+nav {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .logo {
+  float: left;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 14px 40px;
+}
+
+nav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+header {
+  background: url(header.jpg), rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  padding: 15%;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 80px;
+}
+
+header h2 {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+header .btn_rm {
+  margin: 0 44%;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: red;
+}
+
+section{
+  display: flex;
+
+}
+
+aside{
+  flex: 40%;
+  background-color: #CCD3DB;
+  padding: 40px 0 0 15%;
+}
+
+aside h2{
+  margin-bottom: 0;
+  font-size: 30px;
+  color: #468AC9;
+}
+
+aside h3{
+  margin-top: 0;
+  font-size: 15px;
+  color: #468AC9;
+  font-weight: 500;
+}
+
+main{
+  flex: 60%;
+  background-color: #468AC9;
+  padding: 40px;
+}
+
+main h2{
+  font-size: 30px;
+  color: #79b3eb;
+}
+
+main input, textarea{
+  width: 60%;
+  height: 30px;
+  border: none;
+  
+}
+
+main input::placeholder, textarea::placeholder{
+  color: rgb(180, 180, 180);
+}
+
+main textarea{
+  height: 150px;
+}
+
+main button{
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 15px;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  transition: 200ms;
+}
+
+main button:hover{
+  background-color: #79b3eb;
+  transition: 200ms;
+}
+
+.img_sc2{
+  flex: 50%;
+  padding: 40px 20px 20px 15%;
+}
+
+.img_sc2 img{
+  max-width: 100%;
+}
+
+.art_sc2{
+  flex: 50%;
+  padding-right: 15%;
+  margin: auto;
+  text-align: center;
+}
+
+.art_sc2 h2{
+  font-size: 30px;
+}
