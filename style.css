@@ -157,3 +157,34 @@ main button:hover{
 .art_sc2 h2{
   font-size: 30px;
 }
+
+@media screen and (max-width: 700px) {
+
+  nav{
+    padding: 0;
+  }
+
+  section{
+    flex-wrap: wrap;
+  }
+
+  aside{
+    flex:100%;
+    padding-bottom: 200px;
+  }
+
+  main{
+    flex:100%;
+  }
+
+  .img_sc2{
+    flex: 100%;
+    padding: 15px;
+  }
+
+  .art_sc2{
+    flex: 100%;
+    padding: 0 15px;
+  }
+
+}
