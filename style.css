@@ -158,7 +158,61 @@ main button:hover{
   font-size: 30px;
 }
 
-@media screen and (max-width: 700px) {
+/*Read More*/
+#readmore{
+  position: fixed;
+  display: none;
+  flex-flow: row wrap;
+  top: 0; bottom: 0;
+  right: 0; left: 0;
+  padding: 0 20vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  align-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#readmore .title{
+  flex: 100%;
+  font-size: 80px;
+  text-align: center;
+}
+
+#readmore .content_left{
+  flex: 50%;
+  position: relative;
+  padding: 0 4vw;
+  text-align: center;
+}
+
+#readmore .content_right{
+  flex: 50%;
+  position: relative;
+  padding: 0 4vw;
+  text-align: center;
+}
+
+#readmore hr{
+  width: 80%;
+}
+
+#readmore .close{
+  flex: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#readmore img{
+  transition: 200ms;
+}
+
+#readmore img:hover{
+  transform: scale(150%) rotate(90deg);
+  transition: 200ms;
+}
+
+@media screen and (max-width: 769px) {
 
   nav{
     padding: 0;
@@ -187,4 +241,17 @@ main button:hover{
     padding: 0 15px;
   }
 
+  #readmore{
+    padding: 0 40px;
+  }
+
+  #readmore .content_left{
+    flex: 100%;
+    padding: 0;
+  }
+
+  #readmore .content_right{
+    flex: 100%;
+    padding: 0;
+  }
 }
