@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow Condensed"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -23,7 +26,7 @@
         esse animi.
       </h2>
       <div class="btn_rm">
-        <a href="#">Read More</a>
+        <a onclick="readmore_open()">Read More</a>
       </div>
     </header>
     <section>
@@ -64,5 +67,53 @@
         </p>
       </div>
     </section>
+    <div id="readmore">
+      
+      <div class="title">Read more</div>
+      <hr>
+      <div class="content_left">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusamus, maxime amet laborum, eaque non architecto deserunt,
+          quibusdam temporibus harum iste veritatis officiis? Cupiditate
+          sapiente obcaecati dignissimos distinctio quos quia.
+        </p>
+      </div>
+      <div class="content_right">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+          recusandae nihil praesentium nisi voluptatum hic incidunt. A,
+          cupiditate! Rerum dicta dolores vel, laboriosam quasi vero
+          necessitatibus quo velit quam aspernatur! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Aliquam assumenda laudantium, ex
+          reprehenderit earum dignissimos, nostrum est doloribus quo similique
+          magnam perferendis ipsum quibusdam enim quisquam ducimus, corporis
+          adipisci porro. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Quia, atque. Sint inventore consequatur quisquam voluptate, id
+          libero dolores ad dolorem tempore officiis deleniti fugiat eius,
+          quibusdam aut. Iusto, minima omnis?Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Natus, labore? Tempora porro minus nam
+          ipsam laudantium, molestias et eos facilis recusandae deserunt illum
+          necessitatibus delectus tenetur debitis animi eum ab. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Repellendus quia illo
+          veritatis iste fugiat eum cum! Repellat est optio earum, dicta
+          cupiditate eaque voluptatibus voluptates doloribus eligendi, illum
+          sapiente alias! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Saepe mollitia dolor porro, molestiae laudantium autem incidunt
+          animi dolorum harum minima natus alias consequatur voluptatibus. Iusto
+          assumenda nisi aperiam reprehenderit libero!
+        </p>
+      </div>
+      <hr>
+      <a class="close"><img src="close.svg" alt="close" style="height: 50px;" onclick="readmore_close()"></a>
+    </div>
+    <script>
+      function readmore_open(){
+        document.getElementById("readmore").style = "display: flex;"
+      }
+      function readmore_close(){
+        document.getElementById("readmore").style = "display: none;"
+      }
+    </script>
   </body>
 </html>
